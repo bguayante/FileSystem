@@ -7,8 +7,6 @@ current_dir = "root/"
 fileList = []
 
 # For creating "files" and "directories" when the touch and mkdir commands are used #
-
-
 class Link:
     def __init__(self, name, parent_directory, is_directory=False):
         self.name = name
@@ -16,8 +14,6 @@ class Link:
         self.is_directory = is_directory
 
 # Receive and validate user input, call relevant function #
-
-
 def command_prompt():
     global command
     command = input(
@@ -48,8 +44,6 @@ def command_prompt():
         command_prompt()
 
 # FUNCTIONS #
-
-
 def ls():
     # Checks that directory has contents and prints them #
     print("Directory contents:")
